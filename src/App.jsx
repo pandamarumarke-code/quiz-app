@@ -159,9 +159,9 @@ function App() {
   }
 
   // SNSシェア
-  function shareToX() {
-    const text = `行動経済学クイズで${score}/10問正解！🧠\nあなたは何問解ける？👉`
-    const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(appUrl)}`
+  function shareToThreads() {
+    const text = `行動経済学クイズで${score}/10問正解！🧠\nあなたは何問解ける？👉 ${appUrl}`
+    const url = `https://www.threads.net/intent/post?text=${encodeURIComponent(text)}`
     window.open(url, '_blank')
   }
 
@@ -191,7 +191,7 @@ function App() {
           <button className="start-button" onClick={() => setGameStarted(true)}>
             クイズを始める
           </button>
-          <p className="start-note">全10問 ・ 所要時間 約3分</p>
+          <p className="start-note">全10問 ・ 所要時間 約30秒</p>
         </div>
       </div>
     )
@@ -216,9 +216,9 @@ function App() {
           <div className="share-section">
             <p className="share-label">結果をシェアしよう！</p>
             <div className="share-buttons">
-              <button className="share-btn share-x" onClick={shareToX}>
-                <span className="share-icon">𝕏</span>
-                <span>ポスト</span>
+              <button className="share-btn share-threads" onClick={shareToThreads}>
+                <span className="share-icon">🧵</span>
+                <span>Threads</span>
               </button>
               <button className="share-btn share-line" onClick={shareToLINE}>
                 <span className="share-icon">💬</span>
@@ -231,22 +231,7 @@ function App() {
             </div>
           </div>
 
-          {/* LINE公式CTA */}
-          <div className="cta-banner">
-            <div className="cta-icon">📚</div>
-            <div className="cta-content">
-              <h3 className="cta-title">もっと学びたい方へ</h3>
-              <p className="cta-text">行動経済学をビジネスに活かす方法をLINEで無料配信中！</p>
-            </div>
-            <a 
-              href="https://lin.ee/qKLLAv87" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="cta-button"
-            >
-              LINE公式に登録する（無料）
-            </a>
-          </div>
+
 
           <button className="retry-button" onClick={restart}>
             もう一度挑戦する
