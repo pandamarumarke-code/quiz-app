@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0f1a"/>
+      <stop offset="100%" style="stop-color:#1a1a2e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6c5ce7"/>
+      <stop offset="100%" style="stop-color:#a29bfe"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="20%" cy="50%" r="40%">
+      <stop offset="0%" style="stop-color:#6c5ce7;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#6c5ce7;stop-opacity:0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="80%" cy="30%" r="35%">
+      <stop offset="0%" style="stop-color:#a29bfe;stop-opacity:0.12"/>
+      <stop offset="100%" style="stop-color:#a29bfe;stop-opacity:0"/>
+    </radialGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#6c5ce7" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow1)"/>
+  <rect width="1200" height="630" fill="url(#glow2)"/>
+  
+  <!-- 装飾ドット -->
+  <circle cx="150" cy="120" r="3" fill="#6c5ce7" opacity="0.4"/>
+  <circle cx="300" cy="80" r="2" fill="#a29bfe" opacity="0.3"/>
+  <circle cx="900" cy="150" r="4" fill="#6c5ce7" opacity="0.3"/>
+  <circle cx="1050" cy="100" r="2" fill="#a29bfe" opacity="0.4"/>
+  <circle cx="200" cy="500" r="3" fill="#a29bfe" opacity="0.3"/>
+  <circle cx="1000" cy="480" r="3" fill="#6c5ce7" opacity="0.35"/>
+  <circle cx="700" cy="80" r="2.5" fill="#a29bfe" opacity="0.25"/>
+  <circle cx="500" cy="550" r="2" fill="#6c5ce7" opacity="0.3"/>
+  
+  <!-- 装飾ライン -->
+  <line x1="0" y1="620" x2="1200" y2="620" stroke="url(#accent)" stroke-width="3" opacity="0.5"/>
+  
+  <!-- カード背景 -->
+  <rect x="200" y="100" width="800" height="430" rx="24" fill="#16213e" opacity="0.7" filter="url(#shadow)"/>
+  <rect x="200" y="100" width="800" height="430" rx="24" fill="none" stroke="#6c5ce7" stroke-width="1.5" opacity="0.3"/>
+  
+  <!-- 脳アイコン -->
+  <text x="600" y="240" text-anchor="middle" font-size="80" fill="white">🧠</text>
+  
+  <!-- メインタイトル -->
+  <text x="600" y="330" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="52" font-weight="800" fill="url(#accent)">行動経済学</text>
+  <text x="600" y="395" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="48" font-weight="800" fill="white">10問クイズ</text>
+  
+  <!-- サブタイトル -->
+  <text x="600" y="460" text-anchor="middle" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif" font-size="24" fill="#a0a0b0">あなたは何問解ける？</text>
+</svg>
