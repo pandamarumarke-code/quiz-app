@@ -456,6 +456,53 @@ body {
   transform: translateY(-2px);
 }
 
+/* ===== ナビゲーションボタン ===== */
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+  gap: 12px;
+}
+
+.nav-btn {
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-back {
+  background: transparent;
+  color: var(--text-secondary);
+  border: 1px solid rgba(108, 92, 231, 0.3);
+}
+
+.nav-back:hover:not(:disabled) {
+  border-color: var(--accent-primary);
+  color: var(--accent-secondary);
+}
+
+.nav-back:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.nav-next {
+  background: var(--cta-gradient);
+  color: #fff;
+  border: none;
+  margin-left: auto;
+  box-shadow: 0 4px 20px rgba(108, 92, 231, 0.4);
+}
+
+.nav-next:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(108, 92, 231, 0.6);
+}
+
 /* ===== レスポンシブ ===== */
 @media (max-width: 600px) {
   .card {
